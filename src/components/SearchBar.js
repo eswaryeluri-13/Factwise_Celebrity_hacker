@@ -6,7 +6,7 @@ function SearchBar({onSearch}){
     };
 
     return (
-        <input type="text" placeholder='search by name...' onChange={handleChange}/>
+        <input type="text" placeholder='Search User' onChange={handleChange}/>
     )
 }
 

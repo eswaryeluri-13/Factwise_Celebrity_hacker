@@ -35,7 +35,7 @@ const filteredCeleb = celeb.filter(
 
   return (
     <div className='App'>
-      <h1>Celebrity Manager</h1>
+      <h1>Celebrity Manager List View</h1>
       <SearchBar onSearch={handleSearch}/>
 
       <CelebrityList

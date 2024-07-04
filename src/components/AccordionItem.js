@@ -43,6 +43,8 @@ const calcAge = (dob) =>{
            setIsEditing(false);
            setformData({
             name:celebrity.name,
+            email:celebrity.email,
+            age:celebrity.age,
             gender:celebrity.gender,
             country:celebrity.country,
             description:celebrity.description,
@@ -74,9 +76,14 @@ const calcAge = (dob) =>{
                 <div className='accordion-content'>
                     <div>
                         <label>Email:</label>
-                        <span>{celebrity.email}</span>
+                        <input type="text" name="email" value={celebrity.email} onChange={handleChange} disabled={!isEditing}/>
                     </div>
+                
                 <div>
+                <div>
+                <label>Age: </label>
+                <input type="text" name="age" value={formData.age} onChange={handleChange} disabled={!isEditing}/>
+                </div>
                 <label>Gender: </label>
                 <select name="gender" value={formData.gender} onChange={handleChange} disabled={!isEditing}>
                     <option value="male">Male</option>
