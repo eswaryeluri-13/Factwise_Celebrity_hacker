@@ -99,7 +99,7 @@ const calcAge = (dob) =>{
                 </div>
                 <div>
                 <label>Description: </label>
-                <textArea name="description" value="formDate.description" onChange={handleChange} disabled={!isEditing} />
+                <input type="text" name="description" value={formData.description} onChange={handleChange} disabled={!isEditing} />
                 </div>
                 {isAdult &&(
                 <div>
